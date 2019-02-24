@@ -27,4 +27,21 @@ let sortTitle = books.sort(function(a,b) {
   if(a.title > b.title) {return 1;}
   return 0;
 })
+console.log('Les livres par ordre alphabétique: ')
 console.log(sortTitle);
+
+// Trouve le livre avec l'ID: 873495
+
+books.forEach(element => {
+  if(element.id === 873495)
+  console.log("le livre avec l'id 873495 est :")
+  console.log(element);
+});
+
+// Supprime le livre avec l'ID: 133712
+
+books.forEach(element => {
+  if(element.id === 133712){
+    books.splice(books.indexOf(element), books.indexOf(element))
+}});
+
